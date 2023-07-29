@@ -304,9 +304,9 @@ header{
 .navigation {
     display: flex;
     gap: 15px;
-    /* position: absolute;
+    position: absolute;
     bottom: 0px;
-    left: 70%; */
+    left: 70%;
 }
 
 .rewiew-level {
@@ -415,7 +415,7 @@ footer .phone-number {
 
 
 /*блок товаров*/
-.goods {
+.products-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -427,18 +427,18 @@ footer .phone-number {
     align-items: end;
 }
 
-.goods ol {
+.products-content ol {
     list-style: none;
 }
 
-.goods a {
+.products-content a {
     text-decoration: none;
     color: inherit;
 }
 
 
 
-.goods input[type="radio"] {
+.products-content input[type="radio"] {
     position: absolute;
     left: -9999px;
 }
@@ -518,8 +518,8 @@ footer .phone-number {
 .shop-items .row{
     gap: 0;
 }
-.goods .row,
-.goods .col-md-12, .posts {
+.products-content .row,
+.products-content .col-md-12, .posts {
     margin: 0;
     padding: 0;
 }
@@ -659,7 +659,12 @@ footer .phone-number {
         left: -7vw;
     }
 
-   
+    .navigation {
+        position: relative;
+        top: 0px;
+        left: 0;
+    }
+
     .common-title {
         font-size: 30px;
         line-height: 40px;
@@ -968,7 +973,9 @@ header .btn {
 .navigation {
     display: flex;
     gap: 15px;
-    
+    position: absolute;
+    bottom: 0px;
+    left: 70%;
 }
 
 .rewiew-level {
@@ -1077,7 +1084,7 @@ footer .phone-number {
 
 
 /*блок товаров*/
-.goods {
+.products-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -1089,18 +1096,18 @@ footer .phone-number {
     align-items: end;
 }
 
-.goods ol {
+.products-content ol {
     list-style: none;
 }
 
-.goods a {
+.products-content a {
     text-decoration: none;
     color: inherit;
 }
 
 
 
-.goods input[type="radio"] {
+.products-content input[type="radio"] {
     position: absolute;
     left: -9999px;
 }
@@ -1180,8 +1187,8 @@ footer .phone-number {
 .shop-items .row{
     gap: 0;
 }
-.goods .row,
-.goods .col-md-12, .posts {
+.products-content .row,
+.products-content .col-md-12, .posts {
     margin: 0;
     padding: 0;
 }

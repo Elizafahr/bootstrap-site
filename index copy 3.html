@@ -7,8 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/cart_sec.css">
+        <link rel="stylesheet" href="style/2.css">
+
 </head>
 
 <body>
@@ -111,7 +112,7 @@
 
                     </div>
 
-
+                  
                     <div class="menu-right">
                         <div class="search">
                             <a href="tel:88005553535">
@@ -124,9 +125,9 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="header__cart cart" tabindex="0">
-                            <div class="cart__text">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                         <div class="header__cart cart" tabindex="0">
+                        <div class="cart__text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                     fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
@@ -143,11 +144,11 @@
                                     <path d="M14.3197 10.7969H17.0927" stroke="#222222" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <span class="cart__quantity">0</span>
-                            </div>
-                            <div class="cart-content">
-                                <ul class="cart-content__list" data-simplebar>
-                                    <!-- <li class="cart-content__item">
+                            <span class="cart__quantity">0</span>
+                        </div>
+                        <div class="cart-content">
+                            <ul class="cart-content__list" data-simplebar>
+                                <!-- <li class="cart-content__item">
                                     <article class="cart-content__product cart-product">
                                         <img src="img/macbook.jpg" alt="" class="cart-product__img">
                                         <div class="cart-product__text">
@@ -158,16 +159,16 @@
                                     </article>
                                 </li>
                                  -->
-                                </ul>
-                                <div class="cart-content__bottom">
-                                    <div class="cart-content__fullprice">
-                                        <span>Итого:</span>
-                                        <span class="fullprice">568 789 ₽</span>
-                                    </div>
-                                    <div class="cart-content__btn btn">Перейти в корзину</div>
+                            </ul>
+                            <div class="cart-content__bottom">
+                                <div class="cart-content__fullprice">
+                                    <span>Итого:</span>
+                                    <span class="fullprice">568 789 ₽</span>
                                 </div>
+                                <div class="cart-content__btn btn">Перейти в корзину</div>
                             </div>
                         </div>
+                    </div>
 
                     </div>
 
@@ -178,9 +179,424 @@
         </header>
 
         <section class="content">
-      
+<input type="radio" id="All" class="category col-md-2" name="categories" value="All"
+                    checked>
 
-            
+                <input type="radio" id="greens" class="category col-md-2" name="categories"
+                    value="greens">
+                <input type="radio" id="fruits" class="category col-md-2" name="categories"
+                    value="fruits">
+                <input type="radio" id="vegetables" class="category col-md-2" name="categories"
+                    value="vegetables">
+                <input type="radio" id="seasoneds" class="category col-md-2" name="categories"
+                    value="seasoneds">
+                <input type="radio" id="shop-cart" class="category col-md-2" name="categories"
+                    value="shop-cart">
+                <input type="radio" id="drinks" class="category col-md-2" name="categories"
+                    value="drinks">
+
+                <ol class="filters row" id="filters">
+                    <li>
+                        <label for="All">All</label>
+                    </li>
+                    <li>
+                        <label for="greens">Greens</label>
+                    </li>
+                    <li>
+                        <label for="fruits">Fruits</label>
+                    </li>
+                    <li>
+                        <label for="vegetables">Vegetables</label>
+                    </li>
+                    <li>
+                        <label for="seasoneds">Seasoneds</label>
+                    </li>
+                    <li>
+                        <label for="shop-cart">Ready cart</label>
+                    </li>
+                    <li>
+                        <label for="drinks">Juices and seasoneds</label>
+                    </li>
+                </ol>
+            <div class="container">
+                <div class="products-content grid-container">
+                    
+
+                    <ul class="products-grid">
+                        <li class="products-grid__item" data-category="All seasoneds vegetables"
+                        category="seasoned vegetables">
+                            <article class="product" data-category="All seasoneds vegetables"
+                            category="seasoned vegetables">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All seasoneds"
+                        category="seasoned">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All vegetables"
+                        category="vegetables">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                        <li class="products-grid__item" data-category="All fruits"
+                        category="fruits">
+                            <article class="product">
+                                <a href="#" class="product__image">
+                                    <div class="product__switch image-switch">
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-2.jpg" alt="Макбук"></div>
+                                        </div>
+                                        <div class="image-switch__item">
+                                            <div class="image-switch__img"><img src="img/macbook-3.jpg" alt="Макбук"></div>
+                                        </div>
+                                    </div>
+                                    <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</a>
+                                </h3>
+                                <div class="product__props">
+                                    <span class="product__rating">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                        </svg>
+                                        4,5
+                                    </span>
+                                    <span class="product__testimonials">83 отзыва</span>
+                                </div>
+                                <div class="product__info">
+                                    <span class="product__term">Артикул: 879876</span>
+                                    <span class="product__available">В наличии: 13 шт</span>
+                                </div>
+                                <div class="product__price product-price">
+                                    <span class="product-price__current">190 789 ₽</span>
+                                    <span class="product-price__old">194 578 ₽</span>
+                                </div>
+                                <button class="product__btn btn">Добавить в корзину</button>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="height"></div>
+            </div>
             <div class="order-privelages" id="about">
                 <img id="image-position"
                     src="/images/fresh-melientha-suavis-pierre-leaves-white-surface_51524-12145-removebg-preview 1 (1).png"
@@ -192,17 +608,17 @@
                             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                             printer took a galley...</p>
 
-                        <a class="order-link">
-                            <span>Order Now</span>
-                            <span class="navbar-toggler-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16"
-                                    fill="none">
-                                    <path
-                                        d="M32.7071 8.67586C33.0976 8.28533 33.0976 7.65217 32.7071 7.26164L26.3431 0.897682C25.9526 0.507158 25.3195 0.507158 24.9289 0.897682C24.5384 1.28821 24.5384 1.92137 24.9289 2.3119L30.5858 7.96875L24.9289 13.6256C24.5384 14.0161 24.5384 14.6493 24.9289 15.0398C25.3195 15.4303 25.9526 15.4303 26.3431 15.0398L32.7071 8.67586ZM0 8.96875H32V6.96875H0V8.96875Z"
-                                        fill="white" />
-                                </svg>
-                            </span>
-                        </a>
+                            <a class="order-link">
+                                <span>Order Now</span>
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16"
+                                        fill="none">
+                                        <path
+                                            d="M32.7071 8.67586C33.0976 8.28533 33.0976 7.65217 32.7071 7.26164L26.3431 0.897682C25.9526 0.507158 25.3195 0.507158 24.9289 0.897682C24.5384 1.28821 24.5384 1.92137 24.9289 2.3119L30.5858 7.96875L24.9289 13.6256C24.5384 14.0161 24.5384 14.6493 24.9289 15.0398C25.3195 15.4303 25.9526 15.4303 26.3431 15.0398L32.7071 8.67586ZM0 8.96875H32V6.96875H0V8.96875Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </a>
                     </div>
 
 
@@ -486,375 +902,93 @@
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-md-5  carousel slide " id="carouselExampleControls" data-ride="carousel">
+                        <div class="col-md-5 special-items-text  rewiews-text">
                             <h1 class="common-title">What Our Customers About Us saying</h1>
-
-                            <div class="carousel-inner special-items-text rewiews-text">
-                                <div class="carousel-item active">
-                                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It
-                                        has survived not only five centuries, but also the leap into electronic
-                                        typesetting,
-                                        remaining essentially unchanged. It was popularis</p>
-                                    <div class="rewiew-level">
-                                        <div class="customes-name">
-                                           Ann Sorkel
-                                        </div>
-                                        <div class="stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2269">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_270">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_271">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_269">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <g clip-path="url(#clip0_0_269)">
-                                                <path
-                                                    d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                    fill="#F1B90B" />
-                                            </g>
-                                            <defs>
-                                                <clippath id="clip0_0_278">
-                                                    <rect width="23.1525" height="23.1525" fill="white"
-                                                        transform="translate(0.0211792)" />
-                                                </clippath>
-                                            </defs>
-                                        </svg>
-                                        </div>
-                                    </div>
+                            <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                                has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularis</p>
+                            <div class="rewiew-level">
+                                <div class="customes-name">
+                                    Ahmed Hridoy
                                 </div>
-                                <div class="carousel-item">
-                                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It
-                                        has survived not only five centuries, but also the leap into electronic
-                                        typesetting,
-                                        remaining essentially unchanged. It was popularis</p>
-                                    <div class="rewiew-level">
-                                        <div class="customes-name">
-                                            Susan Malel
-                                        </div>
-                                        <div class="stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_22619">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_250">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2471">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2696">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_260)">
-                                                    <path
-                                                        d="M12.4249 15.4042L16.5219 17.6973L15.6064 13.0928L19.0532 9.90452L14.3909 9.35176L12.4249 5.0888V15.4042ZM12.4249 17.6153L5.62092 21.4238L7.1403 13.7758L1.41489 8.48161L9.15843 7.56322L12.4249 0.482422L15.6913 7.56322L23.4348 8.48161L17.7094 13.7758L19.2288 21.4238L12.4249 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_260">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.848419)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
+                                <div class="stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_0_269)">
+                                            <path
+                                                d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
+                                                fill="#F1B90B" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_0_2269">
+                                                <rect width="23.1525" height="23.1525" fill="white"
+                                                    transform="translate(0.0211792)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_0_269)">
+                                            <path
+                                                d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
+                                                fill="#F1B90B" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_0_270">
+                                                <rect width="23.1525" height="23.1525" fill="white"
+                                                    transform="translate(0.0211792)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_0_269)">
+                                            <path
+                                                d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
+                                                fill="#F1B90B" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_0_271">
+                                                <rect width="23.1525" height="23.1525" fill="white"
+                                                    transform="translate(0.0211792)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_0_269)">
+                                            <path
+                                                d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
+                                                fill="#F1B90B" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_0_269">
+                                                <rect width="23.1525" height="23.1525" fill="white"
+                                                    transform="translate(0.0211792)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_0_260)">
+                                            <path
+                                                d="M12.4249 15.4042L16.5219 17.6973L15.6064 13.0928L19.0532 9.90452L14.3909 9.35176L12.4249 5.0888V15.4042ZM12.4249 17.6153L5.62092 21.4238L7.1403 13.7758L1.41489 8.48161L9.15843 7.56322L12.4249 0.482422L15.6913 7.56322L23.4348 8.48161L17.7094 13.7758L19.2288 21.4238L12.4249 17.6153Z"
+                                                fill="#F1B90B" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_0_260">
+                                                <rect width="23.1525" height="23.1525" fill="white"
+                                                    transform="translate(0.848419)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
 
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It
-                                        has survived not only five centuries, but also the leap into electronic
-                                        typesetting,
-                                        remaining essentially unchanged. It was popularis</p>
-                                    <div class="rewiew-level">
-                                        <div class="customes-name">
-                                            Ahmed Hridoy
-                                        </div>
-                                        <div class="stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_9269">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2470">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2751">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2694">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_260)">
-                                                    <path
-                                                        d="M12.4249 15.4042L16.5219 17.6973L15.6064 13.0928L19.0532 9.90452L14.3909 9.35176L12.4249 5.0888V15.4042ZM12.4249 17.6153L5.62092 21.4238L7.1403 13.7758L1.41489 8.48161L9.15843 7.56322L12.4249 0.482422L15.6913 7.56322L23.4348 8.48161L17.7094 13.7758L19.2288 21.4238L12.4249 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2640">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.848419)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It
-                                        has survived not only five centuries, but also the leap into electronic
-                                        typesetting,
-                                        remaining essentially unchanged. It was popularis</p>
-                                    <div class="rewiew-level">
-                                        <div class="customes-name">
-                                           Michael Dlinn
-                                        </div>
-                                        <div class="stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_22469">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_21470">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2171">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_269)">
-                                                    <path
-                                                        d="M11.5976 17.6153L4.79368 21.4238L6.31306 13.7758L0.587646 8.48161L8.33119 7.56322L11.5976 0.482422L14.8641 7.56322L22.6076 8.48161L16.8822 13.7758L18.4016 21.4238L11.5976 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2469">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.0211792)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <g clip-path="url(#clip0_0_260)">
-                                                    <path
-                                                        d="M12.4249 15.4042L16.5219 17.6973L15.6064 13.0928L19.0532 9.90452L14.3909 9.35176L12.4249 5.0888V15.4042ZM12.4249 17.6153L5.62092 21.4238L7.1403 13.7758L1.41489 8.48161L9.15843 7.56322L12.4249 0.482422L15.6913 7.56322L23.4348 8.48161L17.7094 13.7758L19.2288 21.4238L12.4249 17.6153Z"
-                                                        fill="#F1B90B" />
-                                                </g>
-                                                <defs>
-                                                    <clippath id="clip0_0_2160">
-                                                        <rect width="23.1525" height="23.1525" fill="white"
-                                                            transform="translate(0.848419)" />
-                                                    </clippath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a> -->
-                                <div class="navigation">
-                                <a class="order-link " href="#carouselExampleControls" role="button" data-slide="prev">
+                            </div>
+                            <div class="navigation">
+                                <a class="order-link">
                                     <span class="navbar-toggler-icon disabled">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18"
                                             viewBox="0 0 11 18" fill="none">
@@ -864,39 +998,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a class="order-link " href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="navbar-toggler-icon active">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
-                                            viewBox="0 0 33 33" fill="none">
-                                            <g clip-path="url(#clip0_0_278)">
-                                                <path
-                                                    d="M18.3585 16.5762L11.7585 9.97615L13.6438 8.09082L22.1291 16.5762L13.6438 25.0615L11.7585 23.1762L18.3585 16.5762Z"
-                                                    fill="white" />
-                                            </g>
-                                            <defs>
-                                                <clippath id="clip0_0_2178">
-                                                    <rect width="32" height="32" fill="white"
-                                                        transform="translate(0.795898 0.576172)" />
-                                                </clippath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                            </div>
-                            
-                            <!-- <div class="navigation">
-                                <a class="order-link " href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="navbar-toggler-icon disabled">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18"
-                                            viewBox="0 0 11 18" fill="none">
-                                            <path
-                                                d="M3.83686 8.57619L10.4369 15.1762L8.55153 17.0615L0.0661909 8.57619L8.55152 0.0908567L10.4369 1.97619L3.83686 8.57619Z"
-                                                fill="#CCCCCC" />
-                                        </svg>
-                                    </span>
-                                </a>
-                                <a class="order-link " href="#carouselExampleControls" role="button" data-slide="next">
+                                <a class="order-link">
                                     <span class="navbar-toggler-icon active">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33"
                                             viewBox="0 0 33 33" fill="none">
@@ -914,7 +1016,7 @@
                                         </svg>
                                     </span>
                                 </a>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="col-md-5">
                             <img src="/images/rewiews.png" alt="">
@@ -939,7 +1041,7 @@
                             <section class="col-md-12">
                                 <div class="container-goods row">
 
-                                    <input type="radio" id="All" class="category col-md-2" name="categories" value="All"
+                                    <!-- <input type="radio" id="All" class="category col-md-2" name="categories" value="All"
                                         checked>
 
                                     <input type="radio" id="greens" class="category col-md-2" name="categories"
@@ -977,15 +1079,15 @@
                                         <li>
                                             <label for="drinks">Juices and seasoneds</label>
                                         </li>
-                                    </ol>
+                                    </ol> -->
 
 
 
 
-                                    <ol class="row posts">
+                                    <ol class="row posts ">
 
 
-                                        <!-- <li class="post col-md-4 col-lg-3" data-category="All seasoneds fruits"
+                                        <li class="post col-md-4 col-lg-3" data-category="All seasoneds fruits"
                                             category="seasoned fruits">
 
                                             <div class="card card-custom bg-white border-white border-0">
@@ -1007,15 +1109,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>130р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1064,26 +1157,8 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>130р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
-                                                        <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
+                                                        <div class="card-buttons">
                                                             <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                             <a href="#" class="btn btn-outline-primary"><svg
                                                                     xmlns="http://www.w3.org/2000/svg" width="25"
@@ -1136,15 +1211,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>50р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1197,15 +1263,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>15р/100гр</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1258,15 +1315,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>180р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1319,15 +1367,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>150р/800гр</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1380,15 +1419,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>50р/150гр</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1441,15 +1471,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>60р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1502,15 +1523,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>90р/кг</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1562,15 +1574,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>180р/порция</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -1600,7 +1603,7 @@
 
                                         <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
 
-                                            <div class="product card card-custom bg-white border-white border-0">
+                                            <div class="card card-custom bg-white border-white border-0">
                                                 <div class="card-custom-img"
                                                     style="background-image: url('/images/goods/fresh_апельсин.jpg')">
                                                 </div>
@@ -1609,8 +1612,8 @@
                                                         alt="Avatar" />
                                                 </div>
                                                 <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
+                                                    <h4 class="card-title">Апельсиновый фреш</h4>
+                                                    <p class="card-text">Card has minimum height set but will expand if
                                                         more
                                                         space is needed for card body conseasoneds. You can use
                                                         Bootstrap <a
@@ -1621,23 +1624,10 @@
                                                 </div>
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
+                                                    <span>180р/порция</span>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
+                                                        <a href="#" class="btn btn-outline-primary"><svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="25"
                                                                 height="24" viewBox="0 0 25 24" fill="none">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1655,73 +1645,7 @@
                                                                 <path d="M14.3197 10.7969H17.0927" stroke="#222222"
                                                                     stroke-width="1.5" stroke-linecap="round"
                                                                     stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
+                                                            </svg></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1729,201 +1653,7 @@
 
                                         <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
 
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-  <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-                                            <div class="product card card-custom bg-white border-white border-0">
+                                            <div class="card card-custom bg-white border-white border-0">
                                                 <div class="card-custom-img"
                                                     style="background-image: url('/images/goods/fresh_мята.jpg')">
                                                 </div>
@@ -1933,7 +1663,7 @@
                                                 </div>
                                                 <div class="card-body" style="overflow-y: auto">
                                                     <h4 class="card-title">Мятный фреш</h4>
-                                                    <p class="product__text">Card has minimum height set but will expand if
+                                                    <p class="card-text">Card has minimum height set but will expand if
                                                         more
                                                         space is needed for card body conseasoneds. You can use
                                                         Bootstrap <a
@@ -1944,23 +1674,10 @@
                                                 </div>
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">180р</span>
-                                                        <span class="product-value">500мл</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
+                                                    <span>180р/порция</span>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
+                                                        <a href="#" class="btn btn-outline-primary"><svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="25"
                                                                 height="24" viewBox="0 0 25 24" fill="none">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1978,14 +1695,10 @@
                                                                 <path d="M14.3197 10.7969H17.0927" stroke="#222222"
                                                                     stroke-width="1.5" stroke-linecap="round"
                                                                     stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
+                                                            </svg></a>
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                         </li>
                                         <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
 
@@ -2010,15 +1723,6 @@
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
                                                     <span>180р/порция</span>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
                                                         <a href="#" class="btn btn-outline-primary"><svg
@@ -2044,20 +1748,20 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        flf -->
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
+                                        <li class="post col-md-4 col-lg-3" data-category="All seasoned fruits"
+                                            category="seasoned fruits">
 
-                                            <div class="product card card-custom bg-white border-white border-0">
+                                            <div class="card card-custom bg-white border-white border-0">
                                                 <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
+                                                    style="background-image: url('/images/goods/shutterstock-1119857546.jpg')">
                                                 </div>
                                                 <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
+                                                    <img class="img-fluid" src="/images/countries/узбекистан.jpg"
                                                         alt="Avatar" />
                                                 </div>
                                                 <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
+                                                    <h4 class="card-title">Груша</h4>
+                                                    <p class="card-text">Card has minimum height set but will expand if
                                                         more
                                                         space is needed for card body conseasoneds. You can use
                                                         Bootstrap <a
@@ -2068,24 +1772,10 @@
                                                 </div>
                                                 <div class="card-footer"
                                                     style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                 
+                                                    <span>160р/кг</span>
                                                     <div class="card-buttons">
                                                         <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
+                                                        <a href="#" class="btn btn-outline-primary"><svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="25"
                                                                 height="24" viewBox="0 0 25 24" fill="none">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2103,400 +1793,7 @@
                                                                 <path d="M14.3197 10.7969H17.0927" stroke="#222222"
                                                                     stroke-width="1.5" stroke-linecap="round"
                                                                     stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-  <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-  <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-  <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_мята.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Мятный фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_апельсин.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Апельсиновый фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">150гр</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="post col-md-4 col-lg-3" data-category="All drinks" category="drinks">
-
-                                            <div class="product card card-custom bg-white border-white border-0">
-                                                <div class="card-custom-img"
-                                                    style="background-image: url('/images/goods/fresh_морковь.jpg')">
-                                                </div>
-                                                <div class="card-custom-avatar">
-                                                    <img class="img-fluid" src="/images/countries/россия.jpg"
-                                                        alt="Avatar" />
-                                                </div>
-                                                <div class="card-body" style="overflow-y: auto">
-                                                    <h3 class="product__title">Морковный фреш</h3>
-                                                    <p class="product__text">Card has minimum height set but will expand if
-                                                        more
-                                                        space is needed for card body conseasoneds. You can use
-                                                        Bootstrap <a
-                                                            href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                                                            target="_blank">card-decks</a> to align multiple cards
-                                                        nicely in a
-                                                        row.</p>
-                                                </div>
-                                                <div class="card-footer"
-                                                    style="background: inherit; border-color: inherit;">
-                                                    <div class="product__price product-price">
-                                                        <span class="product-price__current">150₽</span>
-                                                        <span class="product-value">300мл</span>
-                                                    </div>
-                                                    <div class="row quantity">
-                                                        <button class="plus-btn btn col" type="button" name="button">
-                                                            +
-                                                        </button>
-                                                        <input class="col product__value" type="text" name="name" value="1" >
-                                                        <button class="minus-btn btn col" type="button" name="button">
-                                                            -
-                                                        </button>
-                                                   </div>
-                                                    <div class="card-buttons">
-                                                        <a href="#" class="btn btn-outline-primary">Заказать</a>
-                                                        <button class="product__btn btn">
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="25"
-                                                                height="24" viewBox="0 0 25 24" fill="none">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M7.61663 19.8203C8.03863 19.8203 8.38163 20.1633 8.38163 20.5853C8.38163 21.0073 8.03863 21.3493 7.61663 21.3493C7.19463 21.3493 6.85263 21.0073 6.85263 20.5853C6.85263 20.1633 7.19463 19.8203 7.61663 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                    d="M18.869 19.8203C19.291 19.8203 19.634 20.1633 19.634 20.5853C19.634 21.0073 19.291 21.3493 18.869 21.3493C18.447 21.3493 18.104 21.0073 18.104 20.5853C18.104 20.1633 18.447 19.8203 18.869 19.8203Z"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path
-                                                                    d="M2.94424 3.25L5.02424 3.61L5.98724 15.083C6.06524 16.018 6.84624 16.736 7.78424 16.736H18.6962C19.5922 16.736 20.3522 16.078 20.4812 15.19L21.4302 8.632C21.5472 7.823 20.9202 7.099 20.1032 7.099H5.35824"
-                                                                    stroke="#222222" stroke-width="1.5"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                                <path d="M14.3197 10.7969H17.0927" stroke="#222222"
-                                                                    stroke-width="1.5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-
+                                                            </svg></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2955,7 +2252,7 @@
     </section>
 
 
-    <script src="script/index.js"></script>
+    <script src="script/index-cart.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -2970,8 +2267,5 @@
     <script src="https://kit.fontawesome.com/7106e0951b.js" crossorigin="anonymous"></script>
     <script src="script/cart_sec.js"></script>
 
-    <script src="script/cart.js"></script>
-
 </body>
-
 </html>
