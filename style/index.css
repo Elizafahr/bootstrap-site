@@ -153,7 +153,7 @@ header{
 }
 
 .text-order a,
-.special-items-text a {
+.special-items-text a, .order-link {
     text-decoration: none;
     color: #222;
     font-size: 18px;
@@ -163,8 +163,9 @@ header{
 
 
 
-.order-privelages a .navbar-toggler-icon,
-.special-items-text a .navbar-toggler-icon {
+/* .order-privelages a .navbar-toggler-icon,
+.special-items-text a .navbar-toggler-icon,  */
+.order-link .navbar-toggler-icon {
     width: 55px;
     height: 55px;
     background-color: #09a66d;
@@ -177,6 +178,10 @@ header{
 
  .order-privelages a:hover,
 .special-items-text a:hover {
+    color: #6b6b6b;
+    scale: 1.05;
+}
+.order-link:hover {
     color: #6b6b6b;
     scale: 1.05;
 }
@@ -1423,4 +1428,6 @@ footer .phone-number {
 
 
 
-
+.card-custom-img img{
+   display: none;
+}

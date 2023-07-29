@@ -37,10 +37,11 @@
 	top: 100%;
 	right: 0;
 	background-color: #fff;
-	box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+	box-shadow: 0px 15px 15px rgba(135, 135, 135, 0.125);
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	border-radius: 15px;
 }
 
 .cart.active:hover .cart-content {
@@ -73,25 +74,16 @@
 }
 
 .cart-product__img {
-	margin-right: 20px;
+	/* margin-right: 20px;
 	max-width: 100px;
-	max-height: 100px;
+	max-height: 100px; */
 	object-fit: cover;
-}
-
-.cart-product__title {
-	max-width: 300px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	color: var(--color-dark);
-	margin-bottom: 18px;
 }
 
 .cart-product__price {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 20px;
+	font-weight: 600;
+	font-size: 19px;
 	line-height: 23px;
 	color: var(--color-dark);
 }
@@ -100,7 +92,7 @@
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-	background-image: url("../img/trash.svg");
+	background-image: url("/images/cross-svgrepo-com.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -182,4 +174,19 @@
     /* position: absolute;
     bottom: 0px;
     left: 70%; */
+}
+
+.cart-content__item{
+	border-bottom: 1px solid gray;
+	overflow-x: hidden;
+}
+.cart-content__item .col-md-4 img{
+	height: 100%;
+	width: 100%;
+}
+.cart-content__item p{
+	font-size: 14px;
+}
+.cart-content__item .small-title{
+	font-size: 17px;
 }
