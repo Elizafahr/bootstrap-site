@@ -874,9 +874,7 @@ header .btn {
 .navigation .order-link{
     margin: 0;
 }
-.rewiews .col-md-5{
-    
-}
+
 .rewiew-level {
     padding: 30px 0px;
     display: flex;
@@ -980,7 +978,7 @@ footer .phone-number {
 
 .icons a:hover{
     scale: 1.05;
-    background-color: ;
+    
 }
 
 
