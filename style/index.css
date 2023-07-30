@@ -871,7 +871,8 @@ header .btn {
     display: flex;
     gap: 15px;
 }
-.navigation .order-link{
+
+.navigation .order-link {
     margin: 0;
 }
 
@@ -976,9 +977,9 @@ footer .phone-number {
     border-radius: 100%;
 }
 
-.icons a:hover{
+.icons a:hover {
     scale: 1.05;
-    
+
 }
 
 
@@ -1210,7 +1211,7 @@ footer .phone-number {
 }
 
 @media screen and (max-width: 900px) {
-    
+
     .privelages-order {
         align-items: center;
     }
@@ -1245,6 +1246,15 @@ footer .phone-number {
 }
 
 @media screen and (max-width: 500px) {
+    .container {
+        padding: 15px 40px;
+    }
+
+    .post {
+
+        min-width: 100%;
+    }
+
     #image-position-vegetables {
         left: -7vw;
     }
@@ -1272,20 +1282,20 @@ footer .phone-number {
         flex-direction: column-reverse;
     }
 
-    .container {
+    /* .container {
         padding: 30px 50px;
-    }
-    .contact-us .no-gutters{
+    } */
+    .contact-us .no-gutters {
         padding: 30px;
     }
 
+    .downoload-app img {
+        width: 100%;
+    }
 
-    /* .navigation {
-        position: relative;
-        top: 0px;
-        left: 0;
-    } */
-
+    .downoload-app .col-md-5 {
+        width: 90%;
+    }
 
 
 }
