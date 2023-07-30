@@ -67,6 +67,7 @@ const generateCartProduct = (img, title, price, text, value, id) => {
 
 const deleteProducts = productParent => {
   let id = productParent.querySelector('.cart-product').dataset.id
+  
   // document.querySelector(`.product[data-id="${id}"]`).querySelector('.product__btn').disabled = false
   let currentValue = parseInt(document.querySelector(`.product[data-id="${id}"]`).querySelector('input').value);
   let currentPrice = parseInt(
@@ -117,6 +118,52 @@ productsBtn.forEach(el => {
     // self.disabled = true;
   })
 })
+
+
+// productsBtn.forEach(el => {
+//   el.closest('.product').setAttribute('data-id', randomId())
+
+//   el.addEventListener('click', e => {
+//     let self = e.currentTarget
+//     let parent = self.closest('.product')
+//     let id = parent.dataset.id
+//     let img = parent.querySelector('.card-custom-image').getAttribute('src');
+//     let title = parent.querySelector('.product__title').textContent
+//     let text = parent.querySelector('.product__text').textContent
+//     let value = parseInt(parent.querySelector('.product__value').value)
+
+//     // Проверяем, есть ли товар уже в корзине
+//     let cartProduct = cartProductsList.querySelector(`[data-id="${id}"]`)
+//     if (cartProduct) {
+//       // Если товар уже есть в корзине, то увеличиваем его количество
+//       let cartValue = parseInt(cartProduct.querySelector('.cart-product__value').textContent)
+//       cartValue += value
+//       cartProduct.querySelector('.cart-product__value').textContent = cartValue
+//     } else {
+//       // Если товара еще нет в корзине, то добавляем его
+//       let priceNumber = parseInt(
+//         priceWithoutSpaces(
+//           parent.querySelector('.product-price__current').textContent
+//         )
+//       )
+//       let priceString = priceNumber * value
+//       if (value > 0) {
+//         plusFullPrice(priceNumber * value)
+
+//         printFullPrice()
+
+//         cartProductsList
+//           .querySelector('.simplebar-content')
+//           .insertAdjacentHTML(
+//             'afterbegin',
+//             generateCartProduct(img, title, priceString, text, value, id)
+//           )
+//         printQuantity()
+//       }
+//     }
+//   })
+// })
+
 
 cartProductsList.addEventListener('click', e => {
   if (e.target.classList.contains('cart-product__delete')) {
